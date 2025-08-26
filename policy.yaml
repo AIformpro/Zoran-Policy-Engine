@@ -1,0 +1,16 @@
+rules:
+  - id: consent_required
+    description: "Consentement obligatoire avant tout traitement de données personnelles"
+    condition: "data.get('consent') == True"
+
+  - id: right_to_erasure
+    description: "Droit à l'oubli, suppression si TTL expiré"
+    condition: "data.get('ttl', 0) > 0"
+
+  - id: biometric_restriction
+    description: "Interdiction de traitement biométrique sans base légale"
+    condition: "not data.get('biometric', False)"
+
+  - id: eco_limit
+    description: "Rollback si empreinte énergétique dépasse seuil"
+    condition: "data.get('energy', 0) < 100"
