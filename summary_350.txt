@@ -1,0 +1,1 @@
+Zoran-Policy-Engine démontre une conformité réglementaire exécutable. Règles RGPD/AI Act en YAML, moteur Python auditable, rollback ΔM11.3, logs traçables. Preuve technique et juridique que Zoran respecte éthique, données personnelles et AI Act, dans un format reproductible et open-source.
